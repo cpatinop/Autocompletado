@@ -1,0 +1,130 @@
+:root {
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --azul: #07789b;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Verdana';
+    background-color: var(--negro);
+    /* Color negro */
+    background-image: radial-gradient(#000000 10%, #1f1f1f 90%);
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: var(--blanco);
+}
+
+span {
+    display: inline-block;
+    align-items: center;
+    background-color: var(--azul);
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.texto {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid var(--blanco);
+    padding: 5px;
+    color: var(--blanco);
+    background-image: url(/img/imagenbk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.texto p {
+    line-height: 28px;
+
+}
+
+.opciones {
+    background-color: var(--blanco);
+    color: var(--negro);
+    max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid var(--blanco);
+    min-height: 40px;
+    background-image: url(/img/imagenbk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.opciones .palabra {
+    display: inline-block;
+    background-color: var(--azul);
+    color: var(--blanco);
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.opciones .palabra:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+#resultado {
+    text-align: center;
+}
+
+.boton {
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: var(--azul);
+    border: none;
+    color: var(--blanco);
+    cursor: pointer;
+    background-image: url(/img/imagenbk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        margin: auto;
+    }
+
+}
